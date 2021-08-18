@@ -1,20 +1,19 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
+import CityInput from "./CityInput"
+import CurrentDateTime from "./CurrentDateTime";
+import WeatherGraph from "./WeatherGraph";
 
 
-class MainContainer extends Component{
-    render(){
-        return(
-           <div className="container">
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-               <p> HALLO THIS A IS A CONTAINER COMPONENT</p>
-           </div>
-        )
+class MainContainer extends Component {
+
+    render() {
+        return (
+            <div className="mainContainer">
+                <CityInput />
+                <WeatherGraph />
+                <CurrentDateTime />
+            </div>
+        );
     }
 }
 
